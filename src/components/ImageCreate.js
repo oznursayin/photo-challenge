@@ -33,13 +33,12 @@ const ImageCreate = () => {
       <div className="images-container">
         {images.map((image) => (
           <div className="image-container" key={image.id}>
-            <img src={image.url} alt="" />
-            <div
+            <img
+              src={image.url}
+              alt=""
               onClick={() => handleIconClick(image.id)}
-              style={{ fontSize: `${image.iconSize}px` }}
-            >
-              👍
-            </div>
+            />
+            <div style={{ fontSize: `${image.iconSize}px` }}>👍</div>
           </div>
         ))}
       </div>
